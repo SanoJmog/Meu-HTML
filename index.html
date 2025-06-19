@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro HTML!</title>
+    <link rel="icon" sizes="32x32"
+        href="./src/gratis-png-nebulosa-portatil-de-red-grafica-de-escritorio-galaxy-star-galaxy.png">
+    <style>
+        @font-face {
+            font-family: 'MinhaFonte';
+            src: url(./src/EduNSWACTHandPre-VariableFont_wght.ttf) format('truetype');
+        }
+
+        header {
+            font-size: xx-large;
+            font-family: fantasy;
+            text-align: center;
+            color: palegoldenrod;
+            background-color: purple;
+        }
+
+        body {
+            background-image: url(src/via-lactea-e1535495054860.jpg);
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cabecalho01 {
+            background-color: palegoldenrod;
+            color: purple;
+            font-family: 'Tahoma';
+            text-align: center;
+            font-size: x-large;
+            border-style: double;
+            border-color: purple;
+            border-width: 8px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            mask-border-outset: 15px;
+            min-width: none;
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        ul {
+            box-sizing: border-box;
+            font-style: italic;
+            list-style-type: disc;
+            display: flexbox;
+            padding-left: 30px;
+            font-family: 'Tahoma';
+            font-size: large;
+            border-style: double;
+            border-color: purple;
+            border-width: 5px;
+            border-radius: 15%;
+            background-color: palegoldenrod;
+            color: purple;
+            margin-left: 40px;
+            text-align: left;
+            max-width: 150px;
+            min-width: 150px;
+
+        }
+
+        mark {
+            background-color: lightgreen;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+            border-bottom: 10px;
+            border-top: 10px;
+
+        }
+
+        article #intro {
+            text-align: center;
+            background-color: purple;
+            color: palegoldenrod;
+            display: grid;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-style: groove;
+        }
+
+        article #formulario {
+            text-align: center;
+            background-color: palegoldenrod;
+            color: purple;
+            display: flexbox;
+            justify-self: center;
+            min-width: 150px;
+            max-width: 600px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-style: groove;
+
+
+        }
+
+        article #estrutura {
+            text-align: center;
+            background-color: palegoldenrod;
+            color: purple;
+            display: flexbox;
+            justify-self: center;
+            min-width: 150px;
+            max-width: 600px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-style: groove;
+
+
+        }
+
+        article #midias {
+            text-align: center;
+            background-color: palegoldenrod;
+            color: purple;
+            display: flexbox;
+            justify-self: center;
+            min-width: 150px;
+            max-width: 600px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-style: groove;
+
+
+        }
+
+        article #tabelas {
+            text-align: center;
+            background-color: palegoldenrod;
+            color: purple;
+            display: flexbox;
+            justify-self: center;
+            min-width: 150px;
+            max-width: 600px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-style: groove;
+
+
+        }
+
+        article #semantica {
+            text-align: center;
+            background-color: palegoldenrod;
+            color: purple;
+            display: flexbox;
+            justify-self: center;
+            min-width: 150px;
+            max-width: 600px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-style: groove;
+
+
+        }
+
+        .cabecalhos {
+            font-size: xx-large;
+            font-family: "MinhaFonte", 'Tahoma';
+            font-style: italic;
+        }
+
+        table {
+            display: flexbox;
+            max-width: auto;
+            min-width: 150px;
+            margin-left: 15px;
+        }
+
+        footer {
+            background-color: purple;
+            text-align: center;
+        }
+
+        footer #footer1 {
+            font-family: 'Tahoma';
+            font-size: large;
+            color: palegoldenrod;
+        }
+
+        footer #contato {
+            font-size: small;
+            color: palegoldenrod;
+        }
+    </style>
+</head>
+
+<body>
+<header>Faça elevar o HTML no seu coração s2 !</header>
+    <hr />
+    <h1 class="cabecalho01"> Que tal um breve resuminho sobre o que já vimos
+        no BootCamp Santander FrontEnd?
+    </h1>
+    <ul>
+        <li><a href="#formulario">Formulários</a></li>
+        <li><a href="#estrutura">Estrutura</a></li>
+        <li><a href="#midias">Mídias</a></li>
+        <li><a href="#tabelas">Tabelas</a></li>
+        <li><a href="#semantica">Semântica</a></li>
+    </ul>
+    <article>
+        <article id="intro">
+            <h2 class="cabecalhos"><b><u>Introdução</u></b></h2>
+            <p>Vou explicar em breves resumos o que vimos até o presente momento deste desafio, o qual por mais que
+                pareça simples para quem já desenvolve, estou me descobrindo, divertindo e
+                pasmem... <mark>APRENDENDO!</mark>
+                HAHAHAHAHA</p>
+        </article>
+        <hr />
+        <article id="formulario">
+            <h3 class="cabecalhos"><b><u>Formulários</u></b></h3>
+            <p>Em formulários aprendemos as tags:Form, Input, tickers como Check Box e Radio Button e Select.</p>
+            <p>E explicações sobre as áreas de texto.</p>
+            <blockquote>
+                <sub>Caso queira, selecionei um vídeo de montagem de Formulário com a Rafa!</sub>
+            </blockquote>
+            <blockquote>
+                <sub>Não se esqueça de mutar nossa bela trilha sonora! </sub>
+            </blockquote>
+            <iframe max-width="25%" src="https://www.youtube.com/embed/wwqOJ2o84S4?si=5EqjorPrHGgd3369"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; stop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+
+        <article id="estrutura">
+            <h4 class="cabecalhos"><b><u>Estrutura</u></b></h4>
+            <p>Em Estruturas aprendemos sobre o tal do "div", o qual foi uma das primeiras coisas que vi quando tentei
+                aprender HTML e agora descobri que sim é útil....</p>
+            <p>Porém não é tão semantico e adaptável a acessibilidade. </p>
+            <p>Vimos também o span, fildsets, o <mark>"falecido"</mark> embeds, e o danadinho do iframe que ta ai acima
+                com o video da Rafa no YouTube linkado pra vocês poderem assistir! </p>
+            <picture><img src="./src/Captura de tela 2025-06-18 235345.png" alt="" width="50%">
+                <blockquote>
+                    <sub>Aqui uma imagem do bonitao do professor <a href="https://www.instagram.com/diogomainardes.dev/"
+                            target="_blank"> @diogomainardes.dev</a></sub>
+                </blockquote>
+            </picture>
+        </article>
+
+        <article id="midias">
+            <h5 class="cabecalhos"><b><u>Mídias</u></b></h5>
+            <p>Em mídias foi a hora da diversão tomar conta.</p>
+            <p> Pois não tem quem não goste de música, vídeo e fotinhas!</p>
+            <p>Foi a vez das tags img, audio, video, iframe e a DANADA da TRACK!</p>
+            <p>A danada que está te incomodando, tocando Pegasus Fantasy no seu ouvido desde que você acessou ao meu
+                site. HAHAHAHA</p>
+            <picture>
+                <img src="./src/seiya.jpg" alt="" width="35%">
+                <blockquote>
+                    "Me de sua força Pégasuuuuuuuuuuuuuuuuuuusssssssssss!"
+                </blockquote>
+            </picture>
+
+        </article>
+        <article id="tabelas">
+            <h6 class="cabecalhos"><b><u>Tabelas</u></b></h6>
+            <p>Quem não gosta de tabelas, nem que seja só pra organizar alguns dados simples?</p>
+            <p> Em tabelas, aprendemos a estruturar/criar dentro do HTML tabelas de forma simples sem se prender a colar
+                a imagens delas prontas. </p>
+            <p>Vimos as tags: table, tr, td/th, tboddy, thead e tfoot. </p>
+            <p>Você já assitiu aos Cavaleiros do Zodíaco completo? Se não... Que tal saber a divisão dos arcos clássicos
+                (Sim, eu amo o clássico HAHAHA)</p>
+            <table border="1" width="500" align="center">
+                <thead>
+                    <tr>
+                        <th title="Arco">Arco</th>
+                        <th title="Episódios">Nº de Episódios</th>
+                        <th title="Nota">Minha Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Guerra Galáctica</th>
+                        <th>episódio 1 ao 8</th>
+                        <th>⭐⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Cavaleiros Negros</th>
+                        <th>episódio 9 ao 15</th>
+                        <th>⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Forças Ocultas no Santuário</th>
+                        <th>episódio 16 ao 22</th>
+                        <th>⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Cavaleiros de Prata</th>
+                        <th>episódio 23 ao 35</th>
+                        <th>⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Cavaleiros de Ouro</th>
+                        <th>episódio 36 ao 41</th>
+                        <th>⭐⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Batalha das Doze Casas</th>
+                        <th>episódio 42 ao 73</th>
+                        <th>⭐⭐⭐⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Asgard</th>
+                        <th>episódio 74 ao 99</th>
+                        <th>⭐⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Poseidon</th>
+                        <th>episódio 100 ao 114</th>
+                        <th>⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Saga de Hades - Santuário</th>
+                        <th>episódio 1 ao 13</th>
+                        <th>⭐⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Saga de Hades - Inferno</th>
+                        <th>episódio 14 ao 25</th>
+                        <th>⭐⭐⭐⭐⭐</th>
+                    </tr>
+                    <tr>
+                        <th>Saga de Hades - Elíseos</th>
+                        <th>episódio 26 ao 31</th>
+                        <th>⭐⭐⭐⭐</th>
+                    </tr>
+                </tbody>
+            </table>
+            <blockquote><sub>Distribuição de episódios pega no site da <a
+                        href="https://br.ign.com/cavaleiros-do-zodiaco/105620/feature/os-cavaleiros-do-zodiaco-guia-de-sagas-arcos-e-episodios-fillers-da-franquia-completa"
+                        target="_blank"> IGN</a> </sub></blockquote>
+        </article>
+        <article id="semantica">
+            <h7 class="cabecalhos"><b><u>Semântica</u></b></h7>
+            <p>E pra finalizar, foi uma resenha sobre semântica.</p>
+            <p>Para poder explicar o porque e pra que de estrutura o HTML em um formato tão lindo e explicado.</p>
+            <p>Esse trabalho vale a pena, afinal além de quem pegar nosso "código" consiga entender tudo o que estiver
+                ali dentro, os leitores de acessibilidade irão conseguir trazer uma experiência melhor para quem os
+                utiliza.</p>
+            <blockquote>
+                <sub>
+                    Claro que ainda assim, tem muito mais situações para se configurar aqui dentro, porém fica muito
+                    mais fácil enteder a estrutura para poder fazer a adaptação a acessibilidade depois.
+                </sub>
+            </blockquote>
+        </article>
+    </article>
+    <footer>
+        <span id="footer1">Todos os direitos reservados a Sano Productions</span>
+        <blockquote id="contato">Entre em contato conosco caso queira compartilhar alguma ideia: <a
+                href="mailto:sano.jmog@hotmail.com" target="_blank">e-mail</a></blockquote>
+                <audio controls src="./src/videoplayback.m4a" autoplay loop style="transform: scale(0.8);"></audio>
+    </footer>
+</body>
+
+</html>
